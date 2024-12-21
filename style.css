@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(5, 5, 28);
+    color: white;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    position: relative;
+    top:20px;
+    right: -10rem;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #737171;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: #0ef;
+}
+nav a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid #0ef;
+    border-radius: 15px;
+    transform: scale(0) translate Y(50px);
+    opacity: 0;
+    transition: 0.4s;
+}
+nav a:hover span{
+    transform: scale(0) translate Y(0px);
+    opacity: 1;
+}
+.left{
+    position: relative;
+    top: 20px;
+    left: -150px;
+    font-size: 1.4rem;
+    width: 30%;
+}
+.firstsection{
+    display: flex;
+    margin: 80px 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+.leftsection{
+    width: 30%;
+    margin: 100px 160px 0 160px;
+    font-size: 2rem;
+}
+.rightsection{
+    width: 20vw;
+    height: 20vw;
+    margin: 100px 160px 0 160px;
+    border-radius: 100%;
+    cursor: pointer;
+    background: linear-gradient(
+    orange,
+    rgb(249, 70, 100),
+    rgb(243, 44, 243));
+    transition: 0.3s;
+}
+.child-right{
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    border-radius: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    scale: 0.99;
+    transition: 0.3s;
+}
+.child-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.rightsection:hover .child-right{
+    scale: 0.94;
+}
+.rightsection:hover{
+    box-shadow: 0px 0px 50px #047980;
+}
+#purple{
+    font-size: 2.2rem;
+    color: rgb(188, 50, 231);
+}
+#insta:hover{
+    filter: drop-shadow(0px 0px 0px #d62976);
+}
+.links{
+    position: relative;
+    left: 210px;
+}
+.links i{
+    margin: 0 25px;
+    scale: 2.2;
+    color: white;
+}
+#github{
+    color: rgb(5,5,28);
+    background-color: white;
+    border-radius: 50%;
+}
+#insta,#linkedin,#email,#github,#facebook,#twitter{
+    transition: 0.4s;
+}
+#insta:hover{
+    color: #d62976;
+    background-color: white;
+    border-radius: 50%;
+}
+#linkedin:hover{
+    color: #0077b5;
+    background-color: white;
+}
+#facebook:hover{
+    color:#316FF6 ;
+    background-color: white;
+    border-radius: 50%;
+}
+#twitter:hover{
+    color: #1DA1F2;
+}
+#email:hover{
+    color: rgb(225, 191, 37);
+}
+#github:hover{
+    color:white;
+    background-color: rgb(5,5,28);
+}
